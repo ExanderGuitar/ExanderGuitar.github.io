@@ -1,0 +1,109 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww14160\viewh18000\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Padding\
+\
+Es el espacio que hay entre el contenido y los bordes de la caja. El comando usado es padding y los valores van en medidas.\
+\
+Hay que tener en cuenta que la distancia que se a\'f1ade podr\'eda hacer aumentar el tama\'f1o de a caja.\
+\
+Si queremos variar el espacio pero de forma diferente usamos 4 medidas con el mismo comando padding. Los valores se asignan en el orden de las agujas del reloj empezando desde arriba.\
+\
+Ejemplo de uso:\
+	padding: 5px 10px 5 px 10px;\
+\
+Si la separaci\'f3n entre los lados opuestos son iguales podemos usar el comando padding pero s\'f3lo indicando los dos valores, donde el primer valor ser\'e1 para arriba y abajo y El Segundo para izquierda y derecha.\
+\
+Ejemplo de uso:\
+	padding: 5px 10px;\
+\
+Si queremos precisar mas podemos usar los comandos padding para los lados espec\'edficos, hay uno para cada lado:\
+\
+Ejemplo de uso:\
+	padding-bottom: 10px;\
+	padding-right: 5px;\
+	padding-top: 6px;\
+	padding-left: 7px;\
+\
+Margin\
+\
+Es el espacio entre la caja y el exterior de \'e9sta. Usamos el comando margin para realizar los ajustes, las dimensiones son las de siempre.\
+\
+Podemos usar tambi\'e9n la notaci\'f3n en la misma linea para los cuatro indicando s\'f3lo las medidas.\
+\
+Lo mismo para la notaci\'f3n doble, donde juntamente indicamos superior e inferior y izquierda y derecha.\
+\
+Y tambi\'e9n para las espec\'edficas.\
+\
+Podemos usar margin para centrar elementos en la p\'e1gina. Este funcionara siempre que definamos el ancho y que no exceda el tama\'f1o de la p\'e1gina.\
+\
+Ejemplo de uso:\
+\
+div. headline \{\
+	width: 400px;\
+	margin: auto;\
+	\}\
+\
+Muchas veces los propios navegadores incluyen una hoja de estilo predeterminada que puede influir a la hora de desarrollar un estilo para la p\'e1gina web. Por eso, al principio de la p\'e1gina de estilo suele situarse el siguiente c\'f3digo que respeta tales preferencias.\
+\
+* \{\
+	margin: 0;\
+	padding: 0;\
+	\}\
+\
+Todos los elementos de HTML puede clasificarse en: elementos de l\'ednea (inline) o elementos de bloques o nivel (Block-level).\
+\
+	Los elementos inline son aquellos que se disponen en la misma linea que el texto sin influir en su disposici\'f3n, como los links.\
+\
+	Los elementos de nivel son aquellos que usan una l\'ednea entera de espacio en la p\'e1gina web. La mayor\'eda de elementos HTML 	son de este tipo.\
+\
+Este comportamiento puede cambiarse con el comando display y sus cuatro valores.\
+\
+	Inline: provoca que un elemento se comporte como elemento de l\'ednea.\
+\
+	Block: provoca que elementos inline se comporten como los de bloque.\
+\
+	inline-blocs: provoca que los elementos de nivel se comporten como los de l\'ednea pero conserven las propiedades de nivel.\
+\
+	None: elimina el elemento de la ventana, el resto de elementos de la web actuaran como si no existiera.\
+\
+El siguiente ejemplo sirve de ilustraci\'f3n.\
+\
+Ejemplo de uso:\
+	<ul>\
+  	  <li>Home</li>\
+  	  <li>Products</li>\
+  	  <li>Settings</li>\
+  	  <li>Inbox</li>\
+	</ul>\
+\
+	li \{\
+	  display: inline;\
+	\}\
+\
+Esto provoca que en vez de haber separaci\'f3n entre los elementos de la lista estos aparezcan todos en la misma l\'ednea como si fuera una barra de navegaci\'f3n.\
+\
+Los elementos de la p\'e1gina web pueden ser ocultadas con la propiedad visibility. Puede tener dos valores:\
+\
+	hidden: oculta un elemento.\
+\
+	visible: muestra un elemento.\
+\
+LA diferencia de esta propiedad con la de display, es que la de \'e9ste \'faltimo desaparece de la p\'e1gina web pero con el primero se le guarda su espacio ocupado en blanco.\
+\
+Nuevo modelo de caja\
+\
+El modelo de caja visto hasta ahora (context-box) que al variar el espaciado o m\'e1rgenes var\'edan tambi\'e9n la altura.\
+\
+Hay otro modelo (border-box) donde la altura y anchura se mantienen fijos y al cambiar el espaciado o el tama\'f1o del borde lo har\'e1n hacia dentro.\
+\
+Para implementarlo se a\'f1ade al principio de la p\'e1gina de estilo para todos los elementos.\
+\
+Ejemplo de uso:\
+	* \{\
+		box-sizing: border-box;\
+		\} }

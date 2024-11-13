@@ -1,0 +1,119 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Oblique;\f2\fnil\fcharset0 LucidaGrande;
+}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{square\}}{\leveltext\leveltemplateid1\'01\uc0\u9642 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{square\}}{\leveltext\leveltemplateid101\'01\uc0\u9642 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh18000\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Formularios 
+\f1\i del ingl\'e9s HTML Forms
+\f0\i0  <form></form>\
+\
+Los formularios en HTML se utilizan para recopilar los datos introducidos por el usuario y dirigirlos a una ubicaci\'f3n o a que se procesen.\
+\
+La forma b\'e1sica de declaraci\'f3n de un formulario es:\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural\partightenfactor0
+\ls1\ilvl0\cf0 {\listtext	
+\f2 \uc0\u9642 
+\f0 	}\'c9tiqueta <form></form>\
+{\listtext	
+\f2 \uc0\u9642 
+\f0 	}Atributo action -> determina d\'f3nde se manda la informaci\'f3n\
+{\listtext	
+\f2 \uc0\u9642 
+\f0 	}Atributo method -> se asigna un verbo HTTP. Por convenci\'f3n, el verbo se escribe en may\'fasculas. Aunque no es necesario.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+Entre medias de las etiquetas de apertura y cierre puede contener elementos hijos como t\'edtulos, p\'e1rrafos, etc.\
+\
+Entrada de texto 
+\f1\i del ingl\'e9s Text Input
+\f0\i0  <input>\
+\
+Se crea un campo de entrada utilizando la etiqueta <input>. No tiene etiqueta de cierre. Puede contener en su interior diferentes atributos.\
+\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural\partightenfactor0
+\ls2\ilvl0\cf0 {\listtext	
+\f2 \uc0\u9642 
+\f0 	}Atributo type -> determina como se renderiza y el tipo de datos que acepta el campo de entrada.\
+{\listtext	
+\f2 \uc0\u9642 
+\f0 	}Atributo name -> necesario para identificar la entrada con un nombre.\
+{\listtext	
+\f2 \uc0\u9642 
+\f0 	}Atributo value -> se asigna cuando se escribe en el campo de entrada. Si inicialmente se le asigna un valor se mostrar\'e1 como texto preasignado.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+Al mandarse este formulario, se produce una uni\'f3n entre el valor del atributo \'93name\'94 y el valor del atributo \'93value\'94.\
+\
+Etiqueta 
+\f1\i del ingl\'e9s Label
+\f0\i0  <label></label>\
+\
+La etiqueta sirve para asociar una descripci\'f3n a un campo de entrada. Para asociarse, el campo de entrada necesita un atributo \'93id\'94 que lo identifique. La etiqueta relaciona el campo de entrada mediante su atributo \'93for\'94 acompa\'f1ado del mismo valor dado para el atributo \'93id\'94.\
+\
+Contrase\'f1a 
+\f1\i del ingl\'e9s Type Password
+\f0\i0 \
+\
+El atributo \'93Type\'94 puede aceptar como valor password. Al escribir en el campo de entrada de texto se ocultara mediante otros caracteres el texto introducido. \'datil para introducir contrase\'f1as.\
+\
+N\'famero 
+\f1\i del ingl\'e9s Type Number\
+\
+
+\f0\i0 El valor \ul number\ulnone  para el atributo \'93Type\'94 sirve para aceptar como entrada solamente n\'fameros.  Si se a\'f1ade el atributo \'93step\'94, junto al campo de entrada se representan unas flechas de subida y bajada. Cuando se pulsan, cambiaran el texto en funci\'f3n del valor asignado al atributo \'93step\'94.\
+\
+\
+Rango 
+\f1\i del ingl\'e9s Type Range
+\f0\i0 \
+\
+Este valor \ul range\ulnone  genera un rango con un m\'ednimo \ul min\ulnone , un m\'e1ximo \ul max\ulnone  y un paso determinado por \ul step\ulnone .\
+\
+Marca de selecci\'f3n 
+\f1\i del ingl\'e9s CheckBox
+\f0\i0 \
+\
+Se utiliza para la selecci\'f3n de varias opciones. Se usa el mismo valor para el atributo \'93name\'94 pero diferente en el \'93id\'94.\
+Necesita del atributo \'93value\'94 para mostrar el texto.\
+\
+Botones circulares 
+\f1\i del ingl\'e9s Radio Buttons
+\f0\i0 \
+\
+Da a elegir una de entre var\'edas respuestas. Se necesita de una etiqueta para mostrar el valor.\
+\
+Si se quiere agrupar varios botones circulares se usa el mismo valor en \'93names\'94.\
+\
+Lista desplegable 
+\f1\i en ingles Dropdown List 
+\f0\i0 <select></select>\
+\
+Da a elegir entre una gran cantidad de opciones en una lista. Se usa el elemento <option></option> para generar cada entrada y se incluye el atributo \'93value\'94.\
+\
+Entrada de lista de datos 
+\f1\i del ingles Datalist Input 
+\f0\i0 <datalist></datalist>\
+\
+Tiene parecido con una lista desplegable pero se permite la entrada por teclado para ir cercando la b\'fasqueda. Debe ir acompa\'f1ado del tipo \ul text\ulnone  y el atributo \'93list\'94 que hace referencia al \'93id\'94 de la lista de datos. \
+\
+Si que muestran su valor cada elemento.\
+\
+Cada elemento de la lista de datos debe de incluirse con la etiqueta <option>.\
+\
+\'c1rea de texto 
+\f1\i del ingles Textarea
+\f0\i0  <textarea></textarea>\
+\
+Permite la introducci\'f3n de una mayor cantidad de texto. Se a\'f1aden filas \'93rows\'94 y columnas \'93cols\'94. Entre las etiquetas se puede identificar texto por defecto para mostrar.\
+\
+Bot\'f3n de subida 
+\f1\i del ingles Submit button
+\f0\i0 \
+\
+Se utiliza el valor \ul submit\ulnone  para el atributo \'93tope\'94 para generar un bot\'f3n. Este se utiliza para mandar el formulario. El atributo \'93value\'94 muestra el texto en el bot\'f3n.}

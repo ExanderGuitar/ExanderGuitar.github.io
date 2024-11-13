@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ultramarinos ultramar</title>
+    <link href="../indexStyle.css" type="text/css" rel="stylesheet">
+    <meta charset="utf-8">
+  </head>
+
+<body>
+
+  <!-- Titulo principal de la pagina-->
+    <div class = "titulo-principal">
+      <h1>Ultramarinos ultramar</h1>
+      <p>Hay de todo nano</p>
+    </div>
+
+    <div class = "barra-navegacion">
+      <a href="/index.html">Inicio</a>
+      <a href="/Academic/academicSection.html">Academic</a>
+      <a href="/Learning/learningSection.html">Learning</a>
+      <a href="/Warcraft/warcraftSection.html">Warcraft</a>
+    </div>
+
+    <div class = "articulo">
+      <h2>Introducción a los contenidos básicos de HTML</h2>
+
+      <h3>Estructura básica</h3>
+      <h4>&lt !DOCTYPE html &gt</h4>
+      <p>Siempre debe de ir al principio de todo documento html; además, indica el estándar de html que debe de usar el navegador para leer la página.</p>
+
+      <h4>&lt html &gt &lt /html &gt</h4>
+      <p>Marcan el inicio y el final del archivo que va a ser leído por el navegador. El resto de código ira entre estas marcas. Hay que fijarse la barra en la marca de cierre, es importante indicarlo.</p>
+
+      <h4>&lt head &gt &lt /head &gt</h4>
+      <p>Indican el encabezado de la página, usado normalmente para añadir links y metadatos.</p>
+
+      <h4>&lt title &gt Título de la página &lt /title &gt</h4>
+      <p>Se sitúa dentro del encabezamiento y sirve para mostrar el nombre de la página web en la barra superior del navegador o en las pestañas.</p>
+
+      <h4>&lt body &gt &lt /body &gt</h4>
+      <p>Aquí añadiremos toda la información que queremos que se muestre en la página web.</p>
+
+      <h3>Elementos básicos</h3>
+      <ul>
+        <li>Encabezados</li>
+          <p>&lth1&gt Titulo &lt/h1&gt	de forma general &lthn&gt &lt/hn&gt donde n=1…6 <br/>
+            Son usados como titulares, tienen un tamaño de fuente superior al cuerpo de texto normal pero posteriormente puede ser modificado.</p>
+
+        <li>Parágrafos</li>
+          <p>&ltp&gt cuerpo de texto &lt/p&gt <br/>
+            Se usan para añadir el cuerpo de texto, tiene un tamaño fijo.</p>
+
+        <li>Comentarios</li>
+          <p>&lt!-- comentario --&gt <br/>
+            Ante la necesidad de aclarar una sección de código o para seccionarla.</p>
+
+        <li>Cambio de línea, espacios y otros elementos.</li>
+          <p>Para el cambio de línea se usa &ltbr/&gt, no hace falta marca de salida.<br/>
+            Para otros elementos</p>
+            <ul>
+  	           <li>Espacio 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &ampnbsp</li>
+               <li>Ampersand  &nbsp&nbsp&nbsp&nbsp &ampamp</li>
+  	           <li>Abrir marca 	&nbsp&nbsp&nbsp &amplt</li>
+  	           <li>Cerrar marca 	&nbsp&nbsp &ampgt</li>
+            </ul><br/>
+
+        <li>Listas</li>
+        <p> Como en la vida misma podemos ordenar la información listándola,
+          puede ser de forma numerada (ordered list) o sin numerar (unordered list).</p>
+
+        <ul>
+  	       <li>Numerada</li>
+           <p>
+           &ltol&gt<br/>
+  			     &nbsp&nbsp&ltli&gt elemento 1 &lt/li&gt<br/>
+  			     &nbsp&nbsp&ltli&gt elemento 2 &lt/li&gt<br/>
+  			   &lt/ol&gt<br/>
+           </p>
+
+           <li>Sin numerar</li>
+           <p>
+           &ltul&gt<br/>
+  			     &nbsp&nbsp&ltli&gt elemento 1 &lt/li&gt<br/>
+  			     &nbsp&nbsp&ltli&gt elemento 2 &lt/li&gt<br/>
+  			   &lt/ul&gt<br/>
+           </p>
+        </ul>
+
+        <li>Enlaces</li>
+        <p>Son usados para redirigir a otra página web.<br/>
+          &lta href=“página web URL” target=“objetivo”&gt nombre del link o texto &lt/a&gt
+        </p>
+
+        <p>La estructura contiene el elemento “a” para hacer referencia a lo que es,
+          “href” sirve para indicar la URL, “target” se usa para indicar si queremos
+          que la página se abra en una pestaña o en una ventana nueva y el nombre del
+          link es un fragmento de texto que cuando se pinche en el se abrirá el enlace.
+          Respecto a target, se puede omitir y entonces se abrirá en la misma ventana.
+        </p>
+
+        <li>Imágenes</li>
+        <p>Podemos añadir imágenes de la siguiente forma.
+          &ltimg src=“URL o dirección de la imagen” alt”descripción de la imagen”/&gt
+
+          El elemento alt es importante usarlo no solo por el texto explicativo que representa
+          la imagen cuando pasamos el ratón por encima, sirve también para la accesibilidad de
+          la página ya que ésta es leída por el sistema de voz.
+        </p>
+
+        <li>Links</li>
+        <p>Útiles para añadir los metadatos al archivo html, indicándole donde cargarlos.<br/>
+          &ltlink href=“ruta o URL” type=“tipo” rel=“estilo”&gt
+        </p>
+
+        <p>
+          Para añadir un archivo .css mediante link o usar una fuente externa.<br/>
+          &ltlink href=“URL” type=“text/css” rel=“stylesheet”&gt
+        </p>
+      </ul>
+    </div>
+
+  </body>
+</html>

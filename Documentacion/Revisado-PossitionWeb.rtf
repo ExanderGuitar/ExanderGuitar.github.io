@@ -1,0 +1,52 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10680\viewh18000\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Layout\
+\
+Para cambiar el lugar donde est\'e1n situados los elementos HTML usamos el indicador position. \'c9ste puede tomar 4 valores.\
+\
+	Static: es el valor por defecto, no hace falta usarlo.\
+\
+	Relative: permite posicionar el elemento de forma relativa al lugar que ocupaba originalmente 	en la p\'e1gina web.\
+\
+		Posteriormente hay que indicar a donde lo deseamos mover, tenemos 4 posiciones para 		escoger:\
+\
+			top: mueve el elemento hacia abajo.\
+\
+			bottom: mueve el elemento hacia arriba.\
+\
+			left: mueve el elemento hacia la derecha.\
+\
+			right: mueve el elemento hacia la izquierda.\
+\
+		Estos elementos solo funcionar\'e1n si declaramos la posici\'f3n relativa.\
+\
+	Absolute: cuando se establece, los otros elementos de la p\'e1gina lo ignorar\'e1n como si no estuviera presente en la p\'e1gina. Se pueden usar los posicionamientos indicados en el apartado anterior.\
+\
+	fixed: establece la posici\'f3n fija en la ventana y no en la p\'e1gina, consiguiendo que al hacer scroll no se mueva. Usado normalmente para mantener siempre en pantalla barras de navegaci\'f3n. Tambi\'e9n se pueden usar las posiciones de movimiento usadas en los anteriores casos.\
+\
+Para evitar solapamientos de algunos elementos podemos usar z-index, este indica hasta donde esta permitido que llegue un elemento a otro respecto a su visibilidad. Acepta valores enteres aplicando un orden de preferencia a la hora de sola-asientos. \
+\
+Este indicador no puede usarse con elementos fijos.\
+\
+Si queremos mover lo m\'e1ximo hasta donde se puede usaremos el indicador float, que puede adoptar los valores:\
+\
+	left: se mover\'e1 lo m\'e1ximo que pueda hacia la izquierda.\
+\
+	right: se mover\'e1 lo m\'e1ximo que se pueda hacia la derecha.\
+\
+Funciona para elementos static y relativa. Adem\'e1s deben de tener un ancho especificado, de otra forma asumir\'e1 todo el espacio.\
+\
+Cuando se solapan los elementos podemos indicar como deben de comportarse, para ello tenemos el indicador clear. Puede usar cuatro valores:\
+\
+	left: el lado izquierdo del elemento no tocar\'e1 ning\'fan otro elemento con el mismo contenedor del elemento.\
+\
+	right: para el lado derecho.\
+\
+	both: no se tocar\'e1 ni el lado derecho ni el izquierdo.\
+\
+	none: no puede tocar ninguna parte.}

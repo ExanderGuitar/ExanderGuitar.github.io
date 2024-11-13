@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ultramarinos ultramar</title>
+    <link href="../indexStyle.css" type="text/css" rel="stylesheet">
+    <meta charset="utf-8">
+  </head>
+  <body>
+
+    <!-- Titulo principal de la pagina-->
+      <div class = "titulo-principal">
+        <h1>Ultramarinos ultramar</h1>
+        <p>Hay de todo nano</p>
+      </div>
+
+      <div class = "barra-navegacion">
+        <a href="/index.html">Inicio</a>
+        <a href="/Academic/academicSection.html">Academic</a>
+        <a href="/Learning/learningSection.html">Learning</a>
+        <a href="/Warcraft/warcraftSection.html">Warcraft</a>
+      </div>
+
+    <div class = "articulo">
+      <h2>Formularios en HTML</h2>
+
+      <h3>Formularios <i>del inglés HTML Forms</i> <code>&ltform&gt&lt/form&gt</code></h3>
+
+      <p>
+        Los formularios en HTML se utilizan para recopilar los datos introducidos
+        por el usuario y dirigirlos a una ubicación o a que se procesen.<br><br>
+
+        La forma básica de declaración de un formulario es:
+        <ul>
+  	      <li>Étiqueta <code>&ltform&gt&lt/form&gt</code></li>
+  	      <li>Atributo action -> determina dónde se manda la información</li>
+  	      <li>Atributo method -> se asigna un verbo HTTP.
+              Por convención, el verbo se escribe en mayúsculas.
+              Aunque no es necesario.</li>
+        </ul>
+        Entre medias de las etiquetas de apertura y cierre puede contener elementos hijos como títulos, párrafos, etc.
+      </p>
+
+      <h3>Entrada de texto <i>del inglés Text Input</i> <code>&ltimput&gt</code></h3>
+
+      <p>
+        Se crea un campo de entrada utilizando la etiqueta <code>&ltimput&gt</code>.
+        No tiene etiqueta de cierre. Puede contener en su interior diferentes atributos.
+        <ul>
+          <li>Atributo type -> determina como se renderiza y el tipo de datos que acepta el campo de entrada.</li>
+          <li>Atributo name -> necesario para identificar la entrada con un nombre.</li>
+          <li>Atributo value -> se asigna cuando se escribe en el campo de entrada.
+              Si inicialmente se le asigna un valor se mostrará como texto preasignado.</li>
+        </ul>
+
+        Al mandarse este formulario, se produce una unión entre el valor del atributo “name” y el valor del atributo “value”.
+      </p>
+
+      <h3>Etiqueta <i>del inglés Label</i> <code>&ltlabel&gt&lt/label&gt</code></h3>
+
+      <p>
+        La etiqueta sirve para asociar una descripción a un campo de entrada.
+        Para asociarse, el campo de entrada necesita un atributo “id” que lo identifique.
+        La etiqueta relaciona el campo de entrada mediante su atributo “for” acompañado del mismo valor dado para el atributo “id”.
+      </p>
+
+      <h3>Contraseña <i>del inglés Type Password</i></h3>
+
+      <p>
+        El atributo “Type” puede aceptar como valor password.
+        Al escribir en el campo de entrada de texto se ocultara mediante otros caracteres el texto introducido.
+        Útil para introducir contraseñas.
+      </p>
+
+      <h3>Número <i>del inglés Type Number</i></h3>
+
+      <p>
+        El valor number para el atributo “Type” sirve para aceptar como entrada solamente números.
+        Si se añade el atributo “step”, junto al campo de entrada se representan unas flechas de subida y bajada.
+        Cuando se pulsan, cambiaran el texto en función del valor asignado al atributo “step”.
+      </p>
+
+      <h3>Rango <i>del inglés Type Range</i></h3>
+
+      <p>
+        Este valor range genera un rango con un mínimo min, un máximo max y un paso determinado por step.
+      </p>
+
+      <h3>Marca de selección <i>del inglés CheckBox</i></h3>
+
+      <p>
+        Se utiliza para la selección de varias opciones. Se usa el mismo valor para el atributo “name” pero diferente en el “id”.
+        Necesita del atributo “value” para mostrar el texto.
+      </p>
+
+      <h3>Botones circulares <i>del inglés Radio Buttons</i></h3>
+
+      <p>
+        Da a elegir una de entre varías respuestas. Se necesita de una etiqueta para mostrar el valor.
+
+        Si se quiere agrupar varios botones circulares se usa el mismo valor en “names”.
+      </p>
+
+      <h3>Lista desplegable <i>del ingles Dropdown List</i> <code>&ltselect&gt&lt/select&gt</code></h3>
+
+      <p>
+        Da a elegir entre una gran cantidad de opciones en una lista.
+        Se usa el elemento <code>&ltoption&gt&lt/option&gt</code> para generar cada entrada y se incluye el atributo “value”.
+      </p>
+
+      <h3>Entrada de lista de datos <i>del ingles Datalist Input</i> <code>&ltdatalist&gt&lt/datalist&gt</code></h3>
+
+      <p>
+        Tiene parecido con una lista desplegable pero se permite la entrada por teclado para ir cercando la búsqueda.
+        Debe ir acompañado del tipo text y el atributo “list” que hace referencia al “id” de la lista de datos.
+
+        Si que muestran su valor cada elemento.
+
+        Cada elemento de la lista de datos debe de incluirse con la etiqueta <option>.
+      </p>
+
+      <h3>Área de texto <i>del ingles Textarea</i> <code>&lttextarea&gt&lt/textarea&gt</code></h3>
+
+      <p>
+        Permite la introducción de una mayor cantidad de texto. Se añaden filas “rows” y columnas “cols”.
+        Entre las etiquetas se puede identificar texto por defecto para mostrar.
+      </p>
+
+      <h3>Botón de subida <i>del ingles Submit Button</i></h3>
+
+      <p>
+        Se utiliza el valor submit para el atributo “tope” para generar un botón.
+        Este se utiliza para mandar el formulario. El atributo “value” muestra el texto en el botón.
+      </p>
+    </div>
+
+  </body>
+</html>

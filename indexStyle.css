@@ -1,0 +1,185 @@
+body {
+   background-image: url("./Resources/prism.png");
+}
+
+@keyframes AniTitulo {
+  0%   {color: #020024}
+  10%  {color: #00d2ff}
+  20%  {color: #2dff98}
+  30%  {color: #2ffb2c}
+  40%  {color: #c3fc47}
+  50%  {color: #f6f217}
+  60%  {color: #ffa502}
+  70%  {color: #ff950d}
+  80%  {color: #ef0101}
+  90%  {color: #ff5590}
+  100% {color: #ff00e6}
+}
+
+.titulo-principal {
+  background-image: url("./Resources/Columbia_glacial.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+
+  padding: 30px 20px 30px 20px;
+  text-align: center;
+  font-family: Verdana, sans-serif;
+  font-size: 50px;
+  color: black;
+  min-width: 1024px;
+  min-height: 70px;
+  margin: auto;
+
+  /*animation*/
+  animation-name: AniTitulo;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+}
+
+.titulo-principal p {
+  text-align: center;
+  font-family: Georgia, sans-serif;
+  font-size: 40px;
+  font-style: italic;
+}
+
+.titulo-principal:hover {
+  animation-play-state: running;
+}
+
+.titulo-seccion {
+  text-align: center;
+  font-family: Verdana;
+  color: #D77869;
+  font-size: 35px;
+}
+
+.barra-navegacion {
+  background-image: linear-gradient(to right, #031F20, #2d5f61);
+  padding: 15px 15px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+.barra-navegacion a:link {
+  display: inline;
+  font-size: 21px;
+  border-style: solid 5px;
+  padding: 13px 17px 13px 17px;
+  color: #c5c6c7;
+  transition: font-size 0.3s ease;
+}
+
+.barra-navegacion a:hover {
+  font-size: 30px;
+}
+
+.articulo {
+  color: #c5c6c7;
+  font-size: 19px;
+  font-family: Avenir;
+  text-align: justify;
+  padding: 5px 50px 5px 50px;
+}
+
+.articulo h2 {
+  color: #2d8a48;
+  font-family: Helvetica;
+  letter-spacing: 2px;
+}
+
+.articulo h3 {
+  color: #c5c6c7;
+  font-family: Helvetica;
+  text-align: right;
+  font-style: italic;
+  font-size: 21px;
+}
+
+.articulo h4 {
+  color: #c5c6c7;
+  font-style: italic;
+}
+
+.articulo li {
+  margin-bottom: 10px;
+}
+
+.articulo-imagen {
+  display: flex;
+}
+
+.articulo-imagen p {
+  margin-left: 10px;
+  margin-top: 0px;
+}
+
+.seccion_dinamica {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seccion_dinamica p {
+  font-family: Avenir;
+  font-size: 19px;
+  font-weight: bold;
+  color: white;
+  padding: 50px;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 4px;
+  border-color: rgba(255, 255, 255, 0.5);
+  margin: 10px;
+  text-align: center;
+}
+
+.seccion_dinamica p:hover {
+  background-color: rgba(245, 100, 112, 0.5);
+}
+
+.enlaces {
+  font-family: Avenir;
+  font-size: 19px;
+  font-weight: bold;
+  color: white;
+  margin: 30px 60px 30px 60px;
+}
+
+.enlaces p {
+  margin-top: 05px;
+  margin-bottom: 40px;
+}
+h2 {
+  text-align: center;
+  font-family: Verdana;
+  color: #76D7C4;
+}
+
+a {
+  text-decoration: none;
+  color: #76D7C4;
+}
+/*a:link {
+  text-decoration: none;
+  color: #FAFAFA;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #FAFAFA;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #76D7C4;
+}
+
+a:active {
+  text-decoration: none;
+  color: #76D7C4;
+}*/

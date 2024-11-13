@@ -1,0 +1,56 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww14160\viewh18000\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Tablas\
+\
+Lo primero que hay que hacer es crear el contenedor de la tabla con el comando <table></table>.\
+\
+Todos los elementos que contiene nuestra tabla como columnas, filas, celdas\'85 deben de ser creados.\
+\
+Lo segundo que debemos de a\'f1adir son las filas con el comando <tr></tr>.\
+\
+Antes de a\'f1adir la informaci\'f3n debemos de crear las celdas con el comando <td>Datos</td>.\
+\
+Podemos a\'f1adir t\'edtulos a las filas y columnas mediante el comando <th>T\'edtulo</th>.\
+Para indicar que el t\'edtulo es para columnas usamos dentro de <th> la propiedad scope con el valor row.\
+Si queremos que sea para filas usaremos el valor col.\
+\
+Ejemplo de uso:\
+	<table>\
+		<tr>\
+			<th></th>\
+			<th scope=\'93col\'94>Saturday</th>\
+			<th scope=\'93col\'94>Sunday</th>\
+		</tr>\
+		<tr>\
+			<th scope=\'93row\'94>Temperature</th>\
+			<td>73</td>\
+			<td>81</td>\
+		</tr>\
+	</table>\
+\
+Para establecer un borde a la tabla usaremos (en CSS) el comando border donde incluye tres valores: el ancho, tipo de l\'ednea y el color.\
+\
+Ejemplo de uso:\
+	table, td \{\
+		border: 1px solid black;\
+	\}\
+\
+Si tenemos informaci\'f3n que necesitamos que use varias columnas usaremos la propiedad colspan que acepta un entero como valor que representa las columnas que atraviesa.\
+\
+Ejemplo de uso:\
+	<td colspan=\'932\'94>Out of Town</td>\
+\
+Si queremos que la informaci\'f3n atraviese varias filas usaremos el comando rowspan, con los valores igual al anterior.\
+\
+Cuando la tabla crece demasiado podemos seccionarlas usando el elemento <tbody></tbody> (table body). Debe de contener dentro toda la tabla excepto los t\'edtulos.\
+\
+Los t\'edtulos van incluidos dentro del elemento <thead></thead> y tambi\'e9n tener en cuenta que debe de estar en la misma fila que los datos.\
+\
+La parte inferior de la tabla tambi\'e9n puede ser separada mediante el elemento <tfoot></tfoot>. Se usa normalmente para a\'f1adir sumas, diferencias, u otros resultados.\
+\
+Las tablas pueden ser personalizadas mediante c\'f3digo CSS de la misma forma que en los aspectos anteriores.}
